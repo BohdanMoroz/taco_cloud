@@ -9,8 +9,13 @@ import javax.validation.constraints.NotBlank;
 
 import lombok.Data;
 
+import java.util.Date;
+
 @Data
 public class Order {
+    private Long id;
+    private Date placedAt;
+
     @NotBlank(message = "Name is required")
     private String name;
 
